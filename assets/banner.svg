@@ -1,0 +1,191 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="100%">
+  <defs>
+    <!-- Background linear gradient -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d"/>
+      <stop offset="45%" stop-color="#0d1b2a"/>
+      <stop offset="100%" stop-color="#080c16"/>
+    </linearGradient>
+
+    <!-- Accent glow gradients -->
+    <radialGradient id="cyan-glow" cx="20%" cy="30%" r="50%">
+      <stop offset="0%" stop-color="#00f2fe" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#00f2fe" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="purple-glow" cx="80%" cy="70%" r="60%">
+      <stop offset="0%" stop-color="#9d4edd" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#9d4edd" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Title text gradient -->
+    <linearGradient id="title-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="50%" stop-color="#e0e7ff"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+
+    <!-- Pill linear gradient -->
+    <linearGradient id="pill-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.85"/>
+    </linearGradient>
+
+    <style>
+      .bg-grid {
+        stroke: rgba(255, 255, 255, 0.04);
+        stroke-width: 1;
+      }
+      .node-pulse {
+        animation: pulseRing 3.5s ease-in-out infinite alternate;
+      }
+      .node-pulse-fast {
+        animation: pulseRingFast 2.5s ease-in-out infinite alternate;
+      }
+      .beam-line {
+        stroke-dasharray: 8 16;
+        animation: beamMove 20s linear infinite;
+      }
+      .glow-orb {
+        animation: floatOrb 8s ease-in-out infinite alternate;
+      }
+      .pill-border {
+        stroke: rgba(56, 189, 248, 0.3);
+        stroke-width: 1.2;
+      }
+      @keyframes pulseRing {
+        0% { transform: scale(0.95); opacity: 0.35; }
+        100% { transform: scale(1.15); opacity: 0.9; }
+      }
+      @keyframes pulseRingFast {
+        0% { transform: scale(0.9); opacity: 0.3; }
+        100% { transform: scale(1.25); opacity: 0.85; }
+      }
+      @keyframes beamMove {
+        to { stroke-dashoffset: -400; }
+      }
+      @keyframes floatOrb {
+        0% { transform: translateY(-10px) translateX(-5px); }
+        100% { transform: translateY(12px) translateX(8px); }
+      }
+      .title-text {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 800;
+        font-size: 46px;
+        letter-spacing: -0.5px;
+        fill: url(#title-grad);
+      }
+      .subtitle-text {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 400;
+        font-size: 19px;
+        fill: #94a3b8;
+      }
+      .badge-text {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 600;
+        font-size: 13px;
+        fill: #38bdf8;
+      }
+      .pill-text {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 500;
+        font-size: 13.5px;
+        fill: #cbd5e1;
+      }
+    </style>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1200" height="360" rx="16" fill="url(#bg-grad)"/>
+
+  <!-- Background Grid Pattern -->
+  <g class="bg-grid">
+    <line x1="0" y1="60" x2="1200" y2="60"/>
+    <line x1="0" y1="120" x2="1200" y2="120"/>
+    <line x1="0" y1="180" x2="1200" y2="180"/>
+    <line x1="0" y1="240" x2="1200" y2="240"/>
+    <line x1="0" y1="300" x2="1200" y2="300"/>
+
+    <line x1="120" y1="0" x2="120" y2="360"/>
+    <line x1="240" y1="0" x2="240" y2="360"/>
+    <line x1="360" y1="0" x2="360" y2="360"/>
+    <line x1="480" y1="0" x2="480" y2="360"/>
+    <line x1="600" y1="0" x2="600" y2="360"/>
+    <line x1="720" y1="0" x2="720" y2="360"/>
+    <line x1="840" y1="0" x2="840" y2="360"/>
+    <line x1="960" y1="0" x2="960" y2="360"/>
+    <line x1="1080" y1="0" x2="1080" y2="360"/>
+  </g>
+
+  <!-- Dynamic Glowing Orbs in Background -->
+  <rect class="glow-orb" x="0" y="0" width="600" height="360" fill="url(#cyan-glow)" pointer-events="none"/>
+  <rect class="glow-orb" x="600" y="0" width="600" height="360" fill="url(#purple-glow)" pointer-events="none"/>
+
+  <!-- Dynamic Network Beams in Background -->
+  <g opacity="0.45">
+    <path class="beam-line" d="M 80 80 Q 240 180 400 120 T 700 240 T 1120 180" fill="none" stroke="#38bdf8" stroke-width="2"/>
+    <path class="beam-line" d="M 120 280 Q 360 200 600 280 T 960 100 T 1150 80" fill="none" stroke="#a855f7" stroke-width="1.8"/>
+  </g>
+
+  <!-- Dynamic Pulsing Network Nodes in Background -->
+  <g transform="translate(140, 90)">
+    <circle class="node-pulse" r="22" fill="#00f2fe" opacity="0.2"/>
+    <circle r="6" fill="#38bdf8"/>
+  </g>
+  <g transform="translate(1060, 80)">
+    <circle class="node-pulse-fast" r="26" fill="#a855f7" opacity="0.2"/>
+    <circle r="7" fill="#c084fc"/>
+  </g>
+  <g transform="translate(980, 260)">
+    <circle class="node-pulse" r="20" fill="#38bdf8" opacity="0.2"/>
+    <circle r="5" fill="#38bdf8"/>
+  </g>
+  <g transform="translate(80, 270)">
+    <circle class="node-pulse-fast" r="18" fill="#a855f7" opacity="0.2"/>
+    <circle r="5" fill="#c084fc"/>
+  </g>
+
+  <!-- Foreground Content: Pill Tag on Top -->
+  <g transform="translate(470, 48)">
+    <rect width="260" height="30" rx="15" fill="#0f172a" stroke="#0284c7" stroke-width="1.2"/>
+    <circle cx="16" cy="15" r="4" fill="#10b981"/>
+    <text x="30" y="20" class="badge-text" fill="#38bdf8">ENTERPRISE AI ECOSYSTEM</text>
+  </g>
+
+  <!-- Foreground Main Title -->
+  <g transform="translate(600, 130)">
+    <text text-anchor="middle" class="title-text">Awesome Enterprise AI Toolkits</text>
+  </g>
+
+  <!-- Foreground Subtitle -->
+  <g transform="translate(600, 172)">
+    <text text-anchor="middle" class="subtitle-text">Curated Architectures, SaaS Platforms, LLMOps, RAG Infrastructure &amp; Agent Frameworks</text>
+  </g>
+
+  <!-- Foreground Category Pills -->
+  <g transform="translate(140, 235)">
+    <!-- Pill 1 -->
+    <g transform="translate(0, 0)">
+      <rect width="205" height="42" rx="21" fill="url(#pill-grad)" class="pill-border"/>
+      <text x="102" y="26" text-anchor="middle" class="pill-text">🚀 Enterprise RAG</text>
+    </g>
+    <!-- Pill 2 -->
+    <g transform="translate(230, 0)">
+      <rect width="225" height="42" rx="21" fill="url(#pill-grad)" class="pill-border"/>
+      <text x="112" y="26" text-anchor="middle" class="pill-text">🤖 Agent Orchestration</text>
+    </g>
+    <!-- Pill 3 -->
+    <g transform="translate(480, 0)">
+      <rect width="205" height="42" rx="21" fill="url(#pill-grad)" class="pill-border"/>
+      <text x="102" y="26" text-anchor="middle" class="pill-text">📈 LLMOps &amp; Tracing</text>
+    </g>
+    <!-- Pill 4 -->
+    <g transform="translate(710, 0)">
+      <rect width="210" height="42" rx="21" fill="url(#pill-grad)" class="pill-border"/>
+      <text x="105" y="26" text-anchor="middle" class="pill-text">🛡️ Security &amp; Gateways</text>
+    </g>
+  </g>
+
+  <!-- Border Frame -->
+  <rect x="1" y="1" width="1198" height="358" rx="15" fill="none" stroke="rgba(255, 255, 255, 0.12)" stroke-width="1.5"/>
+</svg>
