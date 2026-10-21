@@ -9,6 +9,7 @@
   <a href="https://github.com/ishandutta2007/Awesome-Enterprise-AI-Toolkits/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Enterprise-AI-Toolkits?style=for-the-badge&logo=github&color=38bdf8" alt="Forks"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Enterprise-AI-Toolkits/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-success?style=for-the-badge" alt="License"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Enterprise-AI-Toolkits/pulls"><img src="https://img.shields.io/badge/PRs-Welcome-brightgreen?style=for-the-badge" alt="PRs Welcome"/></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
 </p>
 
 ---
@@ -28,6 +29,8 @@ Enterprise AI toolkits enable organizations to build, deploy, benchmark, and gov
 - [💻 Open-Source Enterprise AI Frameworks](#-open-source-enterprise-ai-frameworks)
 - [🏗️ Enterprise AI Architectural Blueprint](#️-enterprise-ai-architectural-blueprint)
 - [🤝 How to Contribute](#-how-to-contribute)
+- [💖 Support & Sponsorship](#-support--sponsorship)
+- [📈 Star History](#--star-history)
 - [⚖️ Disclaimer & Compliance](#️-disclaimer--compliance)
 
 ---
@@ -141,6 +144,28 @@ Contributions from enterprise architects, platform engineers, and open-source ma
    - For **Open-Source**: Include the official repository URL, stargazers badge (`style=social&color=white`), license, and core enterprise use case.
 4. ✅ **Ensure consistent formatting, working URLs, and alphabetical / metric sorting**.
 5. 🚀 **Submit a Pull Request** with a clear summary of your additions.
+
+---
+
+## 💖 Support & Sponsorship
+
+Thank you for exploring and utilizing **Awesome Enterprise AI Toolkits**! If this repository has helped you or your organization navigate the enterprise AI and LLMOps landscape, please consider supporting the project:
+
+- ⭐ **Star this repository** to help others discover it.
+- 🍴 **Fork and contribute** new tools, benchmarks, and architectural patterns.
+- 📢 **Share it** with fellow engineers, architects, and tech leaders on LinkedIn, X/Twitter, or Reddit.
+- ☕ **Buy me a coffee / Sponsor the project**: Support continuous research and maintenance via the [GitHub Sponsors Dashboard](https://github.com/sponsors/ishandutta2007).
+
+<p align="left">
+  <a href="https://github.com/sponsors/ishandutta2007">
+    <img src="https://img.shields.io/badge/Sponsor-%E2%9D%A4-pink?style=for-the-badge&logo=github-sponsors" alt="Sponsor on GitHub" />
+  </a>
+</p>
+
+---
+
+##  Star History
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Enterprise-AI-Toolkits&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Enterprise-AI-Toolkits&type=date&legend=top-left)
 
 ---
 
